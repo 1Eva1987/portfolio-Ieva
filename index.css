@@ -1,0 +1,53 @@
+:root {
+  --primaryColor: linear-gradient(
+    to right,
+    rgb(109, 1, 109),
+    rgb(229, 30, 76),
+    yellow
+  );
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(246, 244, 246);
+  font-family: sans-serif;
+}
+.about {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+button {
+  cursor: pointer;
+  border-width: 0;
+  background-color: white;
+  font-size: 30px;
+  padding: 5px 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  border-color: white;
+  background-image: var(--primaryColor);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo h1 {
+  background: var(--primaryColor);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  margin-right: 30px;
+}
