@@ -9,44 +9,58 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <!-- nav bar -->
     <div class="nav">
         <div class="logo">
             <h1>Ieva</h1>
         </div>
         <div class="nav-links">
-        <a href="#about-me">About Me</a>
-        <a href="#my-work">My work</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact-me">Contact Me</a>
+            <a href="#about-me">About Me</a>
+            <a href="#my-work">My work</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact-me">Contact Me</a>
+            <button class="toggle-btn">*</button>
         </div>
     </div>
-    <div class="about" id="about-me">
+    <!-- END of nav bar -->
+    <div class="ul-container hidden">
+        <ul class="ul-toggle">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+    </div>
+    <!-- sections -->
+    <div class="section" id="about-me">
         <p>hello my name is ieva baranauskaite ieva love codeing</p>
         <h1>hello my name is ieva baranauskaite i love codeing</h1>
         <h2>hello</h2>
         <button>Go To</button>
 
     </div>
-    <div class="about" id="my-work">
+    <div class="section" id="my-work">
         <p>hello my name is ieva baranauskaite ieva love codeing</p>
         <h1>hello my name is ieva baranauskaite i love codeing</h1>
         <h2>hello</h2>
         <button>Go To</button>
     
     </div>
-    <div class="about" id="skills">
+    <div class="section" id="skills">
         <p>hello my name is ieva baranauskaite ieva love codeing</p>
         <h1>hello my name is ieva baranauskaite i love codeing</h1>
         <h2>hello</h2>
         <button>Go To</button>
     
     </div>
-    <div class="about" id="contact-me">
+    <div class="section" id="contact-me">
         <p>hello my name is ieva baranauskaite ieva love codeing</p>
         <h1>hello my name is ieva baranauskaite i love codeing</h1>
         <h2>hello</h2>
         <button>Go To</button>
     
     </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
