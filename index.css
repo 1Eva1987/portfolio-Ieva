@@ -142,6 +142,11 @@ button {
 .c-btn {
   margin: 10px;
 }
+.c-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
 /* class to hide element */
 .hidden {
   display: none;
