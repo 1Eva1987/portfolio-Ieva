@@ -7,6 +7,8 @@
     <title>Ieva Baranauskaite</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/b99ab0f749.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!-- nav bar -->
@@ -16,13 +18,15 @@
         </div>
         <div class="nav-links">
             <a href="#about-me">About Me</a>
-            <a href="#my-work">My work</a>
+            <a href="#my-work">My Work</a>
             <a href="#skills">Skills</a>
             <a href="#contact-me">Contact Me</a>
-            <button class="toggle-btn">*</button>
+            <button class="toggle-btn"><i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button>
         </div>
     </div>
     <!-- END of nav bar -->
+
+    <!-- ul -->
     <div class="ul-container hidden">
         <ul class="ul-toggle">
             <li><a href="#about-me">About Me</a></li>
@@ -31,34 +35,54 @@
             <li><a href="#contact-me">Contact Me</a></li>
         </ul>
     </div>
+    <!--  -->
+
+    <div class="hello">
+        <h1 class="hello">hello my name is ieva</h1>
+        <div class="welcome">
+            <p>to get to know me better start scrolling or use the link above</p>
+            <img src="https://img.freepik.com/premium-vector/line-art-girl-with-ponytail-glasses-woman-silhouette-drawn-one-continuous-line-colors_490843-200.jpg?w=360" alt="">
+        </div>
+    </div>
     <!-- sections -->
     <div class="section" id="about-me">
-        <p>hello my name is ieva baranauskaite ieva love codeing</p>
-        <h1>hello my name is ieva baranauskaite i love codeing</h1>
-        <h2>hello</h2>
-        <button>Go To</button>
-
+        <h1 class="title">ABOUT ME</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, commodi ex impedit delectus labore aperiam et, quisquam quas saepe illum eveniet officia repellendus distinctio tenetur, doloremque suscipit excepturi accusantium maxime adipisci optio velit fuga voluptate quo quam! Facilis, aliquam nam! Voluptatibus ab inventore facilis omnis tempora! Reprehenderit quasi debitis quia.</p>
     </div>
     <div class="section" id="my-work">
-        <p>hello my name is ieva baranauskaite ieva love codeing</p>
-        <h1>hello my name is ieva baranauskaite i love codeing</h1>
-        <h2>hello</h2>
-        <button>Go To</button>
-    
+        <h1 class="title">MY WORK</h1>
+        <div class="work-container">
+            <div class="card">
+                <img src="./images/screencapture-1eva1987-github-io-5-day-weather-dashboard-2023-02-02-12_08_29.png "  alt="">
+                <h3>Weather Dashboard App</h3>
+                <p>This app was made to create 5-day weather dashboard. When the user searches for a city, they are presented with the
+                current and future weather conditions and that city is added to the search history, if the user refreshes
+                the page, up to 5 last searches can be seen and the user is represented with weather conditions for the last checked city.
+                </p>
+                <div class="card-btn">
+                    <button class="c-btn"><i class="fa-solid fa-eye"></i> Live</button>
+                    <button class="c-btn"><i class="fa-brands fa-github"></i> GitHub</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/screencapture-1eva1987-github-io-timed-quiz-2023-02-02-12_09_52.png" alt="">
+                <h3>Quiz Game</h3>
+                <p>This app was created to build a timed coding quiz with multiple-choice questions and possibility to save the score.
+                The aim is to answer the questions as quick as possible.Every incorrect answer reduces the time by 10s. 
+                When all the questions are answered or the time ends up the user will be able to save the score.
+                </p>
+                <div class="card-btn">
+                    <button class="c-btn"><i class="fa-solid fa-eye"></i> Live</button>
+                    <button class="c-btn"><i class="fa-brands fa-github"></i> GitHub</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section" id="skills">
-        <p>hello my name is ieva baranauskaite ieva love codeing</p>
-        <h1>hello my name is ieva baranauskaite i love codeing</h1>
-        <h2>hello</h2>
-        <button>Go To</button>
-    
+        <h1 class="title">SKILLS</h1>
     </div>
     <div class="section" id="contact-me">
-        <p>hello my name is ieva baranauskaite ieva love codeing</p>
-        <h1>hello my name is ieva baranauskaite i love codeing</h1>
-        <h2>hello</h2>
-        <button>Go To</button>
-    
+        <h1 class="title">CONTACT ME</h1>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="./index.js"></script>

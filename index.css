@@ -14,20 +14,12 @@ body {
   background-color: rgb(246, 244, 246);
   font-family: sans-serif;
 }
-/* sections */
-.section {
-  background-color: white;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
+
 /* buttons */
 button {
+  margin-right: 20px;
   cursor: pointer;
-  border-width: 0;
   background-color: white;
-  font-size: 30px;
   padding: 5px 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -39,20 +31,21 @@ button {
 }
 /* navigation bar */
 .nav {
-  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0 10px grey;
 }
 .logo h1 {
+  font-size: 50px;
   background: var(--primaryColor);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin: 0 20px;
 }
 .nav-links a {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
+  /* font-weight: bold; */
   color: black;
   text-decoration: none;
   text-align: center;
@@ -85,6 +78,69 @@ button {
   background: var(--primaryColor) left bottom rgb(246, 244, 246) no-repeat;
   background-size: 100% 5px;
   border-radius: 10px;
+}
+/* welcome */
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 20px 0 20px;
+}
+/* sections */
+.section {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 20px;
+}
+.title {
+  display: inline;
+  background: var(--primaryColor);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/* my work */
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  background-color: rgb(246, 244, 246);
+  text-align: center;
+  width: 40%;
+  min-width: 300px;
+  min-height: 550px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card img {
+  width: 80%;
+  height: auto;
+  border-radius: 4px;
+}
+.card p {
+  margin: 20px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.card-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.c-btn {
+  margin: 10px;
 }
 /* class to hide element */
 .hidden {
