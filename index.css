@@ -82,11 +82,10 @@ body {
   background: var(--primaryColor) left bottom rgb(246, 244, 246) no-repeat;
   background-size: 100% 5px;
   border-radius: 10px;
-  opacity: 0.8;
 }
 
 .ul-toggle li a:hover {
-  opacity: 1;
+  font-size: 22px;
 }
 .toggle-btn {
   margin-right: 20px;
@@ -181,6 +180,36 @@ body {
   background: white;
   border-radius: 5px;
   box-shadow: 0 3px 10px grey;
+}
+/* contact me */
+#contact-me {
+  padding: 20px;
+}
+.contacts {
+  background-color: rgb(246, 244, 246);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px grey;
+}
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact-links a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background: var(--primaryColor) left bottom rgb(246, 244, 246) no-repeat;
+  border-radius: 10px;
+}
+.contact-links a:hover {
+  background: black;
+  box-shadow: 5px 5px 10px black;
 }
 /* footer */
 .footer {
