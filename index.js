@@ -5,9 +5,13 @@ var ulDivEl = $(".ul-container");
 var logoEl = $(".logo");
 
 toggleBtn.on("click", function () {
-  if (ulDivEl.hasClass("hidden")) {
-    ulDivEl.removeClass("hidden");
-  } else {
-    ulDivEl.addClass("hidden");
-  }
+  $("i", $(this)).toggleClass(
+    "fa-sharp fa-solid fa-circle-chevron-down fa-solid fa-circle-chevron-up"
+  );
+  // if (ulDivEl.hasClass("hidden")) {
+  //   ulDivEl.removeClass("hidden");
+  // } else {
+  //   ulDivEl.addClass("hidden");
+  // }
+  ulDivEl.toggle("slow");
 });
