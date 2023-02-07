@@ -182,6 +182,13 @@ body {
   border-radius: 5px;
   box-shadow: 0 3px 10px grey;
 }
+/* footer */
+.footer {
+  text-align: center;
+}
+.footer span {
+  color: red;
+}
 /* class to hide element */
 .hidden {
   display: none;
