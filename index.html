@@ -5,28 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ieva Baranauskaite</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/b99ab0f749.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <!-- nav bar -->
-    <div class="nav">
+    <div class="nav" >
         <div class="logo">
-            <h1>Ieva</h1>
+            <p>Ieva</p>
         </div>
-        <div class="nav-links">
+        <div class="nav-links" >
             <a href="#about-me">About Me</a>
             <a href="#my-work">My Work</a>
             <a href="#skills">Skills</a>
             <a href="#contact-me">Contact Me</a>
-            <button class="toggle-btn btn"><i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button>
+            <button class="toggle-btn btn"><i class="fa-sharp fa-solid fa-circle-chevron-down" id="down"></i></button>
         </div>
     </div>
     <!-- END of nav bar -->
-
-    <!-- ul -->
+    <!-- ul toggle-->
     <div class="ul-container hidden">
         <ul class="ul-toggle">
             <li><a href="#about-me">About Me</a></li>
@@ -37,23 +35,40 @@
     </div>
     <!--  -->
 <!-- sections -->
-    <section class="hello section">
-        <h1 class="hello title"><span class="text"></span><span class="cursor">&nbsp;</span> my name is Ieva</h1>
+    <section class="hello section" id="top">
+        <h1 class=" title"><span class="text"></span><span class="cursor">&nbsp;</span></h1>
+        <p class="my">My name is</p>
+        <p class="name">Ieva</p>
         <div class="welcome">
-    
             <div class="instructions">
                 <p><strong>I'm a Junior Developer</p>
                 <p>  based in 
                 <p>North Lincolnshire.</strong></p>
 
             </div>
-            <img class="woman" src="https://img.freepik.com/premium-vector/line-art-girl-with-ponytail-glasses-woman-silhouette-drawn-one-continuous-line-colors_490843-200.jpg?w=360" alt="drawn ailhouette of a woman">
+            <!-- <img class="woman" src="https://img.freepik.com/premium-vector/line-art-girl-with-ponytail-glasses-woman-silhouette-drawn-one-continuous-line-colors_490843-200.jpg?w=360" alt="sketch of a woman"> -->
         </div>
     </section>
+
     <section class="section" id="about-me">
         <h1 class="title">ABOUT ME</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, commodi ex impedit delectus labore aperiam et, quisquam quas saepe illum eveniet officia repellendus distinctio tenetur, doloremque suscipit excepturi accusantium maxime adipisci optio velit fuga voluptate quo quam! Facilis, aliquam nam! Voluptatibus ab inventore facilis omnis tempora! Reprehenderit quasi debitis quia.</p>
+        <div class="container-about">
+        <div class="about">
+            <h3>I AM A JUNIOR DEVELOPER WHO ENJOYS WORKING IN FRONT-END DEVELOPMENT.</h3>
+            <p>
+            After working in a various customer service roles and a care sector I was seeking 
+            for a career change where I would be continuously challenged but didnt know which path i should choose.
+
+            One day I saw a friend of mine working on a coding project and that immediately hooked me. With some advices 
+            where to start off I was going a self-toaught route for a while and then I have enrolled in a sixteen week 
+            intensive bootcamp in front-end development, where I completed projects using HTML, 
+            CSS, Bootstrap, JavaScript, jQuery, Node.js and React. 
+            </p>
+        </div>
+        <div class="other"></div>
+        </div>
     </section>
+
     <section class="section" id="my-work">
         <h1 class="title">MY WORK</h1>
         <div class="work-container">
@@ -83,6 +98,7 @@
             </div>
         </div>
     </section>
+
     <section class="section" id="skills">
         <h1 class="title">SKILLS</h1>
         <div class="icons-skills">
@@ -97,6 +113,7 @@
             <img src="./images/icons8-visual-studio-code-is-a-source-code-editor-developed-by-microsoft-100.png" alt="">
         </div>
     </section>
+
     <section class="section" id="contact-me">
         <h1 class="title">CONTACT ME</h1>
         <div class="contacts">
@@ -108,9 +125,11 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <p class="f-text">Made with <span>&hearts;</span> by Ieva Baranauskaite</p>
     </footer>
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="./index.js"></script>
 </body>

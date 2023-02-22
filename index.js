@@ -3,6 +3,7 @@ const toggleBtn = $(".toggle-btn");
 const ulEl = $(".ul-toggle");
 const ulDivEl = $(".ul-container");
 const logoEl = $(".logo");
+iDown = $("#down");
 
 // button nav toggle
 toggleBtn.on("click", function () {
@@ -12,16 +13,24 @@ toggleBtn.on("click", function () {
   ulDivEl.toggle("slow");
 });
 
-// word typing effect
+ulEl.on("click", "a", function () {
+  ulDivEl.toggle("slow");
+  iDown.toggleClass(
+    "fa-sharp fa-solid fa-circle-chevron-down fa-solid fa-circle-chevron-up"
+  );
+});
+
+// ------------------word typing effect
+
 const typedText = document.querySelector(".text");
-const wordsArray = ["Hello", "Labas", "Привeт"];
+const wordsArray = ["Hello,", "Labas,", "Привeт,"];
 let i = 0;
 let j = 0;
 
 function type() {
   if (j < wordsArray[i].length) {
     typedText.textContent += wordsArray[i].charAt(j);
-    console.log(j);
+    // console.log(j);
     j++;
     setTimeout(type, 300);
   } else {
