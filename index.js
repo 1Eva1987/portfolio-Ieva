@@ -20,10 +20,9 @@ ulEl.on("click", "a", function () {
   );
 });
 
-// ------------------word typing effect
-
+// hello typing effect
 const typedText = document.querySelector(".text");
-const wordsArray = ["Hello,", "Labas,", "Привeт,"];
+const wordsArray = ["Hello,", "Labas,", "Пpивeт,"];
 let i = 0;
 let j = 0;
 

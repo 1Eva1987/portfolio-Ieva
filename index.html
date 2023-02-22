@@ -10,21 +10,21 @@
 
 </head>
 <body>
-    <!-- nav bar -->
+<!-- nav bar -->
     <div class="nav" >
         <div class="logo">
-            <p>Ieva</p>
+            <p>IEVA</p>
         </div>
         <div class="nav-links" >
-            <a href="#about-me">About Me</a>
-            <a href="#my-work">My Work</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact-me">Contact Me</a>
+            <a class ="hidden-links" href="#about-me">About Me</a>
+            <a class ="hidden-links" href="#my-work">My Work</a>
+            <a class ="hidden-links" href="#skills">Skills</a>
+            <a class="show" href="#contact-me">Contact Me</a>
             <button class="toggle-btn btn"><i class="fa-sharp fa-solid fa-circle-chevron-down" id="down"></i></button>
         </div>
     </div>
-    <!-- END of nav bar -->
-    <!-- ul toggle-->
+
+<!-- ul toggle-->
     <div class="ul-container hidden">
         <ul class="ul-toggle">
             <li><a href="#about-me">About Me</a></li>
@@ -33,42 +33,39 @@
             <li><a href="#contact-me">Contact Me</a></li>
         </ul>
     </div>
-    <!--  -->
-<!-- sections -->
+
+<!-- hello section -->
     <section class="hello section" id="top">
-        <h1 class=" title"><span class="text"></span><span class="cursor">&nbsp;</span></h1>
+        <h1 class="title"><span class="text"></span><span class="cursor">&nbsp;</span></h1>
         <p class="my">My name is</p>
         <p class="name">Ieva</p>
         <div class="welcome">
             <div class="instructions">
                 <p><strong>I'm a Junior Developer</p>
-                <p>  based in 
-                <p>North Lincolnshire.</strong></p>
-
+                <p>based in 
+                <p>North Lincolnshire</strong></p>
             </div>
-            <!-- <img class="woman" src="https://img.freepik.com/premium-vector/line-art-girl-with-ponytail-glasses-woman-silhouette-drawn-one-continuous-line-colors_490843-200.jpg?w=360" alt="sketch of a woman"> -->
         </div>
     </section>
 
+<!-- about-me section -->
     <section class="section" id="about-me">
         <h1 class="title">ABOUT ME</h1>
         <div class="container-about">
         <div class="about">
             <h3>I AM A JUNIOR DEVELOPER WHO ENJOYS WORKING IN FRONT-END DEVELOPMENT.</h3>
             <p>
-            After working in a various customer service roles and a care sector I was seeking 
-            for a career change where I would be continuously challenged but didnt know which path i should choose.
-
-            One day I saw a friend of mine working on a coding project and that immediately hooked me. With some advices 
+            After working in a various customer service roles and a care sector I was seeking for a career change where I would be
+            continuously challenged, but didn't know which path i should choose.
+            One day I saw a friend of mine working on a coding project and that immediately caught my attention. With some advices 
             where to start off I was going a self-toaught route for a while and then I have enrolled in a sixteen week 
             intensive bootcamp in front-end development, where I completed projects using HTML, 
             CSS, Bootstrap, JavaScript, jQuery, Node.js and React. 
             </p>
         </div>
-        <div class="other"></div>
-        </div>
     </section>
 
+<!-- my-work section -->
     <section class="section" id="my-work">
         <h1 class="title">MY WORK</h1>
         <div class="work-container">
@@ -99,6 +96,7 @@
         </div>
     </section>
 
+<!-- skills section -->
     <section class="section" id="skills">
         <h1 class="title">SKILLS</h1>
         <div class="icons-skills">
@@ -107,13 +105,14 @@
             <img src="./images/icons8-javascript-100.png" alt="">
             <img src="./images/icons8-bootstrap-100.png" alt="">
             <img src="./images/icons8-jquery-100.png" alt="">
+            <img src="./images/icons8-visual-studio-code-is-a-source-code-editor-developed-by-microsoft-100.png" alt="">
+            <img src="./images/icons8-github-100.png" alt="">
             <img src="./images/icons8-node.js-100.png" alt="">
             <img src="./images/icons8-react-100.png" alt="">
-            <img src="./images/icons8-github-100.png" alt="">
-            <img src="./images/icons8-visual-studio-code-is-a-source-code-editor-developed-by-microsoft-100.png" alt="">
         </div>
     </section>
 
+<!-- contact-me section -->
     <section class="section" id="contact-me">
         <h1 class="title">CONTACT ME</h1>
         <div class="contacts">
@@ -126,10 +125,12 @@
         </div>
     </section>
 
+<!-- footer -->
     <footer class="footer">
         <p class="f-text">Made with <span>&hearts;</span> by Ieva Baranauskaite</p>
     </footer>
 
+<!-- script tags for js -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="./index.js"></script>
 </body>
