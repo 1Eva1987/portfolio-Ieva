@@ -50,3 +50,22 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, 500);
 });
+
+// Navigating
+
+const scrollLinks = document.querySelectorAll(".scroll-link");
+const navBar = document.querySelector(".nav");
+
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+    const navBarHeight = navBar.getBoundingClientRect().height;
+    let position = element.offsetTop - navBarHeight;
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+  });
+});
