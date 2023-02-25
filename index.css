@@ -44,7 +44,7 @@ body {
   justify-content: space-between;
   box-shadow: 0 0 10px grey;
 }
-.logo p {
+.logo a {
   font-style: oblique;
   font-size: 50px;
   background: var(--primaryColor);
@@ -130,11 +130,16 @@ body {
 /* hello */
 
 .welcome {
-  margin: 20px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin: 0 40px 0 40px;
+}
+
+.welcome p {
+  font-size: 20px;
+  margin: 5px;
 }
 .text {
   font-size: 50px;
@@ -158,22 +163,20 @@ body {
   color: black;
 }
 .name {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
   color: rgb(109, 1, 109);
 }
-.instructions {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 40px 0 40px;
+.download {
+  margin-top: 20px;
 }
-.instructions p {
-  font-size: 20px;
-  margin: 5px;
+.cv {
+  justify-self: flex-end;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
 }
-
 /* about me */
 .container-about {
   display: flex;
@@ -328,9 +331,6 @@ body {
   }
   .ul-toggle {
     display: none;
-  }
-  .instructions p {
-    font-size: 30px;
   }
   .hello {
     background-image: url("https://img.freepik.com/premium-vector/line-art-girl-with-ponytail-glasses-woman-silhouette-drawn-one-continuous-line-colors_490843-200.jpg?w=360");
